@@ -11,6 +11,13 @@
 		7B830858265CAF48005CE9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830857265CAF48005CE9EF /* ContentView.swift */; };
 		7B83085A265CAF49005CE9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B830859265CAF49005CE9EF /* Assets.xcassets */; };
 		7B83085D265CAF49005CE9EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B83085C265CAF49005CE9EF /* Preview Assets.xcassets */; };
+		7B830865265CB138005CE9EF /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830864265CB138005CE9EF /* AudioRecorder.swift */; };
+		7B830867265CB28E005CE9EF /* Listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830866265CB28E005CE9EF /* Listview.swift */; };
+		7B830869265CB816005CE9EF /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830868265CB816005CE9EF /* Recording.swift */; };
+		7B83086B265CB8AB005CE9EF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83086A265CB8AB005CE9EF /* Helper.swift */; };
+		7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */; };
+		7B8F399D26620054000765F6 /* AirplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F399C26620054000765F6 /* AirplayView.swift */; };
+		7B8F399F26624FF8000765F6 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F399E26624FF8000765F6 /* BottomSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,14 @@
 		7B830859265CAF49005CE9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B83085C265CAF49005CE9EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B83085E265CAF49005CE9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B830864265CB138005CE9EF /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		7B830866265CB28E005CE9EF /* Listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listview.swift; sourceTree = "<group>"; };
+		7B830868265CB816005CE9EF /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		7B83086A265CB8AB005CE9EF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		7B8F399C26620054000765F6 /* AirplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayView.swift; sourceTree = "<group>"; };
+		7B8F399E26624FF8000765F6 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		7BA49A6D2664D6960044F518 /* Mic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mic.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +67,11 @@
 		7B830854265CAF48005CE9EF /* Mic */ = {
 			isa = PBXGroup;
 			children = (
+				7BABA2B5266658740033344E /* Controllers */,
+				7BABA2B4266658600033344E /* Views */,
+				7BABA2B3266658560033344E /* Models */,
+				7BA49A6D2664D6960044F518 /* Mic.entitlements */,
 				7B830855265CAF48005CE9EF /* MicApp.swift */,
-				7B830857265CAF48005CE9EF /* ContentView.swift */,
 				7B830859265CAF49005CE9EF /* Assets.xcassets */,
 				7B83085E265CAF49005CE9EF /* Info.plist */,
 				7B83085B265CAF49005CE9EF /* Preview Content */,
@@ -67,6 +85,35 @@
 				7B83085C265CAF49005CE9EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BABA2B3266658560033344E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B830868265CB816005CE9EF /* Recording.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BABA2B4266658600033344E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B830857265CAF48005CE9EF /* ContentView.swift */,
+				7B830866265CB28E005CE9EF /* Listview.swift */,
+				7B8F399C26620054000765F6 /* AirplayView.swift */,
+				7B8F399E26624FF8000765F6 /* BottomSheetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BABA2B5266658740033344E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B830864265CB138005CE9EF /* AudioRecorder.swift */,
+				7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */,
+				7B83086A265CB8AB005CE9EF /* Helper.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B830867265CB28E005CE9EF /* Listview.swift in Sources */,
+				7B8F399D26620054000765F6 /* AirplayView.swift in Sources */,
+				7B8F399F26624FF8000765F6 /* BottomSheetView.swift in Sources */,
+				7B830865265CB138005CE9EF /* AudioRecorder.swift in Sources */,
 				7B830858265CAF48005CE9EF /* ContentView.swift in Sources */,
 				7B830856265CAF48005CE9EF /* MicApp.swift in Sources */,
+				7B830869265CB816005CE9EF /* Recording.swift in Sources */,
+				7B83086B265CB8AB005CE9EF /* Helper.swift in Sources */,
+				7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mic/Mic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Mic/Preview Content\"";
 				DEVELOPMENT_TEAM = 522LP8JL6D;
@@ -279,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lalith.Mic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mic/Mic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Mic/Preview Content\"";
 				DEVELOPMENT_TEAM = 522LP8JL6D;
@@ -301,6 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lalith.Mic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

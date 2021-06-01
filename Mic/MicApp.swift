@@ -11,7 +11,7 @@ import SwiftUI
 struct MicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(audioRecorder: AudioRecorder(numberOfSamples: 10))
         }
     }
 }
