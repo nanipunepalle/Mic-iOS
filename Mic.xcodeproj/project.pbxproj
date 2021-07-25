@@ -18,6 +18,9 @@
 		7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */; };
 		7B8F399D26620054000765F6 /* AirplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F399C26620054000765F6 /* AirplayView.swift */; };
 		7B8F399F26624FF8000765F6 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F399E26624FF8000765F6 /* BottomSheetView.swift */; };
+		7B93F5A026AD7A3E00F0384C /* Tab1MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F59F26AD7A3E00F0384C /* Tab1MainView.swift */; };
+		7B93F5A226AD7A5400F0384C /* Tab2SpeakupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */; };
+		7B93F5A426ADDD5E00F0384C /* TranscriptsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		7B8F399C26620054000765F6 /* AirplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplayView.swift; sourceTree = "<group>"; };
 		7B8F399E26624FF8000765F6 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		7B93F59F26AD7A3E00F0384C /* Tab1MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1MainView.swift; sourceTree = "<group>"; };
+		7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2SpeakupView.swift; sourceTree = "<group>"; };
+		7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptsListView.swift; sourceTree = "<group>"; };
 		7BA49A6D2664D6960044F518 /* Mic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mic.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,9 @@
 				7B830866265CB28E005CE9EF /* Listview.swift */,
 				7B8F399C26620054000765F6 /* AirplayView.swift */,
 				7B8F399E26624FF8000765F6 /* BottomSheetView.swift */,
+				7B93F59F26AD7A3E00F0384C /* Tab1MainView.swift */,
+				7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */,
+				7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,13 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B93F5A426ADDD5E00F0384C /* TranscriptsListView.swift in Sources */,
 				7B830867265CB28E005CE9EF /* Listview.swift in Sources */,
 				7B8F399D26620054000765F6 /* AirplayView.swift in Sources */,
 				7B8F399F26624FF8000765F6 /* BottomSheetView.swift in Sources */,
+				7B93F5A026AD7A3E00F0384C /* Tab1MainView.swift in Sources */,
 				7B830865265CB138005CE9EF /* AudioRecorder.swift in Sources */,
 				7B830858265CAF48005CE9EF /* ContentView.swift in Sources */,
 				7B830856265CAF48005CE9EF /* MicApp.swift in Sources */,
 				7B830869265CB816005CE9EF /* Recording.swift in Sources */,
+				7B93F5A226AD7A5400F0384C /* Tab2SpeakupView.swift in Sources */,
 				7B83086B265CB8AB005CE9EF /* Helper.swift in Sources */,
 				7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */,
 			);
