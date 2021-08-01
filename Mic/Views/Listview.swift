@@ -15,7 +15,7 @@ struct Listview: View {
         List {
             ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
                 
-                ListRowView(recording: recording)
+                ListRowView(recording: recording,audioRecorder: audioRecorder)
                     .animation(.linear(duration: 0.3))
                 
             }

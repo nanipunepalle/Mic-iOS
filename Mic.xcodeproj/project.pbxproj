@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5C61CC26B70771004FF63D /* TranscribeAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C61CB26B70771004FF63D /* TranscribeAudio.swift */; };
+		7B5C61CE26B70BEB004FF63D /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C61CD26B70BEB004FF63D /* Transcript.swift */; };
 		7B830856265CAF48005CE9EF /* MicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830855265CAF48005CE9EF /* MicApp.swift */; };
 		7B830858265CAF48005CE9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830857265CAF48005CE9EF /* ContentView.swift */; };
 		7B83085A265CAF49005CE9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B830859265CAF49005CE9EF /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B5C61CB26B70771004FF63D /* TranscribeAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeAudio.swift; sourceTree = "<group>"; };
+		7B5C61CD26B70BEB004FF63D /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 		7B830852265CAF48005CE9EF /* Mic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B830855265CAF48005CE9EF /* MicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicApp.swift; sourceTree = "<group>"; };
 		7B830857265CAF48005CE9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7B830868265CB816005CE9EF /* Recording.swift */,
+				7B5C61CD26B70BEB004FF63D /* Transcript.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				7B830864265CB138005CE9EF /* AudioRecorder.swift */,
 				7B83086C265CB9E8005CE9EF /* AudioPlayer.swift */,
 				7B83086A265CB8AB005CE9EF /* Helper.swift */,
+				7B5C61CB26B70771004FF63D /* TranscribeAudio.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 				7BBAE40E26B6552F0052430F /* ListRowView.swift in Sources */,
 				7B830858265CAF48005CE9EF /* ContentView.swift in Sources */,
 				7B830856265CAF48005CE9EF /* MicApp.swift in Sources */,
+				7B5C61CC26B70771004FF63D /* TranscribeAudio.swift in Sources */,
 				7B830869265CB816005CE9EF /* Recording.swift in Sources */,
+				7B5C61CE26B70BEB004FF63D /* Transcript.swift in Sources */,
 				7B93F5A226AD7A5400F0384C /* Tab2SpeakupView.swift in Sources */,
 				7B83086B265CB8AB005CE9EF /* Helper.swift in Sources */,
 				7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */,

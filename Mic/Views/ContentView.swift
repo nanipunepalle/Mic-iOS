@@ -48,7 +48,7 @@ struct ContentView: View {
                     Listview(audioRecorder: audioRecorder)
                 }
                 else{
-                    TranscriptsListView()
+                    TranscriptsListView(audioRecorder: audioRecorder)
                 }
                 BottomSheetView(audioRecorder: audioRecorder)
             }

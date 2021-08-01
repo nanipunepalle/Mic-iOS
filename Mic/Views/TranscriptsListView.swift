@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct TranscriptsListView: View {
+    
+    @ObservedObject var audioRecorder: AudioRecorder
+    
     var body: some View {
-        List {
-            Text("one")
-            Text("one")
-        }
+//        NavigationView {
+            List {
+                ForEach(audioRecorder.transcripts, id: \.createdAt) { transcript in
+                    HStack{
+                        Text("\(transcript.fileURL.lastPathComponent)")
+                        
+                    }
+                    
+                }
+            }
+//        }
     }
 }
 
 struct TranscriptsListView_Previews: PreviewProvider {
     static var previews: some View {
-        TranscriptsListView()
+        TranscriptsListView(audioRecorder: AudioRecorder(numberOfSamples: 10))
     }
 }

@@ -22,6 +22,7 @@ class AudioRecorder: NSObject,ObservableObject {
     let LEVEL_LOWPASS_TRIG:Float32 = 0.30
     
     @Published public var soundSamples: [Float]
+    @ObservedObject var transcribeAudio = TranscribeAudio()
     
     
     init(numberOfSamples: Int) {
@@ -35,6 +36,8 @@ class AudioRecorder: NSObject,ObservableObject {
         setupSession()
         setupEngine()
         setupNotifications()
+        transcribeAudio.requestTranscribePermissions()
+        fetchTranscripts()
     }
     
     
@@ -52,6 +55,7 @@ class AudioRecorder: NSObject,ObservableObject {
     var audioRecorder: AVAudioRecorder!
     
     @Published public var recordings = [Recording]()
+    @Published public var transcripts = [Transcript]()
     
     var currentFilePath: AVAudioFile!
     
@@ -152,8 +156,10 @@ class AudioRecorder: NSObject,ObservableObject {
         let tapNode: AVAudioNode = mixerNode
         let format = tapNode.outputFormat(forBus: 0)
         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let DirPath = documentURL.appendingPathComponent("Recordings")
+        try? FileManager.default.createDirectory(atPath: DirPath.path, withIntermediateDirectories: true, attributes: nil)
         do{
-            let file = try AVAudioFile(forWriting: documentURL.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).caf"), settings: format.settings)
+            let file = try AVAudioFile(forWriting: DirPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).caf"), settings: format.settings)
             currentFilePath = file
         }
         catch {
@@ -207,7 +213,10 @@ class AudioRecorder: NSObject,ObservableObject {
         recording = false
         playerNode.stop()
         state = .stopped
+        
+        transcribeAudio.transcribeAudio(url: currentFilePath.url)
         fetchRecordings()
+        fetchTranscripts()
     }
     
     
@@ -251,8 +260,11 @@ class AudioRecorder: NSObject,ObservableObject {
         recordings.removeAll()
         
         let fileManager = FileManager.default
+        
         let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let directoryContents = try! fileManager.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil)
+        let DirPath = documentDirectory.appendingPathComponent("Recordings")
+        try? fileManager.createDirectory(atPath: DirPath.path, withIntermediateDirectories: true, attributes: nil)
+        let directoryContents = try! fileManager.contentsOfDirectory(at: DirPath, includingPropertiesForKeys: nil)
         for audio in directoryContents {
             let recording = Recording(fileURL: audio, createdAt: getCreationDate(for: audio))
             recordings.append(recording)
@@ -263,10 +275,29 @@ class AudioRecorder: NSObject,ObservableObject {
         //        objectWillChange.send(self)
     }
     
+    func fetchTranscripts() {
+        transcripts.removeAll()
+        
+        let fileManager = FileManager.default
+        
+        let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let DirPath = documentDirectory.appendingPathComponent("Transcripts")
+        try? fileManager.createDirectory(atPath: DirPath.path, withIntermediateDirectories: true, attributes: nil)
+        let directoryContents = try! fileManager.contentsOfDirectory(at: DirPath, includingPropertiesForKeys: nil)
+        for transcript in directoryContents {
+            let transcript = Transcript(fileURL: transcript, createdAt: getCreationDate(for: transcript ))
+            transcripts.append(transcript)
+        }
+        
+        recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedAscending})
+        
+        //        objectWillChange.send(self)
+    }
+    
     func deleteRecording(urlsToDelete: [URL]) {
         
         for url in urlsToDelete {
-            print(url)
+//            print(url)
             do {
                 try FileManager.default.removeItem(at: url)
             } catch {
