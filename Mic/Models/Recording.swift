@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recording {
+struct Recording: Equatable{
     let fileURL: URL
     let createdAt: Date
 }

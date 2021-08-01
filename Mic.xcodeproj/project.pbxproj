@@ -21,6 +21,7 @@
 		7B93F5A026AD7A3E00F0384C /* Tab1MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F59F26AD7A3E00F0384C /* Tab1MainView.swift */; };
 		7B93F5A226AD7A5400F0384C /* Tab2SpeakupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */; };
 		7B93F5A426ADDD5E00F0384C /* TranscriptsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */; };
+		7BBAE40E26B6552F0052430F /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAE40D26B6552F0052430F /* ListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2SpeakupView.swift; sourceTree = "<group>"; };
 		7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptsListView.swift; sourceTree = "<group>"; };
 		7BA49A6D2664D6960044F518 /* Mic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mic.entitlements; sourceTree = "<group>"; };
+		7BBAE40D26B6552F0052430F /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				7B93F59F26AD7A3E00F0384C /* Tab1MainView.swift */,
 				7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */,
 				7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */,
+				7BBAE40D26B6552F0052430F /* ListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				7B8F399F26624FF8000765F6 /* BottomSheetView.swift in Sources */,
 				7B93F5A026AD7A3E00F0384C /* Tab1MainView.swift in Sources */,
 				7B830865265CB138005CE9EF /* AudioRecorder.swift in Sources */,
+				7BBAE40E26B6552F0052430F /* ListRowView.swift in Sources */,
 				7B830858265CAF48005CE9EF /* ContentView.swift in Sources */,
 				7B830856265CAF48005CE9EF /* MicApp.swift in Sources */,
 				7B830869265CB816005CE9EF /* Recording.swift in Sources */,

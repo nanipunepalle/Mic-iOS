@@ -18,11 +18,6 @@ struct ContentView: View {
         
         NavigationView {
             VStack(alignment: .leading) {
-                //                Picker("Option", selection: $selectedIndex, content: {
-                //                    Text("Recordings").tag(0)
-                //                    Text("Transcripts").tag(1)
-                //                })
-                //                .pickerStyle(SegmentedPickerStyle())
                 HStack{
                     Button(action: {
                         selectedIndex = 1
