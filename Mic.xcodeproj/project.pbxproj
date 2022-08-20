@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB24748289178A100370C82 /* TranscriptTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB24747289178A100370C82 /* TranscriptTextView.swift */; };
 		7B5C61CC26B70771004FF63D /* TranscribeAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C61CB26B70771004FF63D /* TranscribeAudio.swift */; };
 		7B5C61CE26B70BEB004FF63D /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C61CD26B70BEB004FF63D /* Transcript.swift */; };
 		7B830856265CAF48005CE9EF /* MicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B830855265CAF48005CE9EF /* MicApp.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DB24747289178A100370C82 /* TranscriptTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptTextView.swift; sourceTree = "<group>"; };
 		7B5C61CB26B70771004FF63D /* TranscribeAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeAudio.swift; sourceTree = "<group>"; };
 		7B5C61CD26B70BEB004FF63D /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 		7B830852265CAF48005CE9EF /* Mic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				7B93F5A126AD7A5400F0384C /* Tab2SpeakupView.swift */,
 				7B93F5A326ADDD5E00F0384C /* TranscriptsListView.swift */,
 				7BBAE40D26B6552F0052430F /* ListRowView.swift */,
+				3DB24747289178A100370C82 /* TranscriptTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				7B830869265CB816005CE9EF /* Recording.swift in Sources */,
 				7B5C61CE26B70BEB004FF63D /* Transcript.swift in Sources */,
 				7B93F5A226AD7A5400F0384C /* Tab2SpeakupView.swift in Sources */,
+				3DB24748289178A100370C82 /* TranscriptTextView.swift in Sources */,
 				7B83086B265CB8AB005CE9EF /* Helper.swift in Sources */,
 				7B83086D265CB9E8005CE9EF /* AudioPlayer.swift in Sources */,
 			);

@@ -42,10 +42,9 @@ struct ListRowView: View {
                         Button(action: {
                             self.audioPlayer.startPlayback(audio: recording!.fileURL)
                         }) {
-                            
                             Image(systemName: "play.fill")
                                 .resizable()
-                                .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 30, maxWidth: 30, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 30, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(minWidth: 30, idealWidth: 30, maxWidth: 30, minHeight: 30, idealHeight: 30, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .imageScale(.large)
                                 .foregroundColor(.primary)
                         }.buttonStyle(PlainButtonStyle())
@@ -53,10 +52,9 @@ struct ListRowView: View {
                         Button(action: {
                             self.audioPlayer.stopPlayback()
                         }) {
-                            
                             Image(systemName: "stop.fill")
                                 .resizable()
-                                .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 30, maxWidth: 30, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 30, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(minWidth: 30, idealWidth: 30, maxWidth: 30, minHeight: 30, idealHeight: 30, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .imageScale(.large)
                                 .foregroundColor(.primary)
                         }.buttonStyle(PlainButtonStyle())

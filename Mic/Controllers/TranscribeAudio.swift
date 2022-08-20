@@ -14,7 +14,7 @@ class TranscribeAudio: NSObject,ObservableObject {
         SFSpeechRecognizer.requestAuthorization { [unowned self] authStatus in
             DispatchQueue.main.async {
                 if authStatus == .authorized {
-                    print("Good to go!")
+//                    print("Good to go!")
                 } else {
                     print("Transcription permission was declined.")
                 }

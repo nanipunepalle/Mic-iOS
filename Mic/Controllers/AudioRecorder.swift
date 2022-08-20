@@ -80,7 +80,8 @@ class AudioRecorder: NSObject,ObservableObject {
     
     func setupSession() {
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(.playAndRecord, mode: .default,options: [.allowBluetoothA2DP])
+//        try? session.setCategory(.playAndRecord, mode: .default,options: [.allowBluetoothA2DP])
+        try? session.setCategory(.playAndRecord, mode: .voiceChat, options: [.allowAirPlay,.allowBluetooth])
         try? session.setActive(true)
         inputDeviceName = session.currentRoute.outputs[0].portName
         outputDeviceName = session.currentRoute.inputs[0].portName
